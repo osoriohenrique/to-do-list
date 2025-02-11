@@ -21,7 +21,7 @@ func main() {
 func menu() {
 	for {
 		var option int
-		fmt.Printf("1 - Add Taskn2 - List tasks\n3 - Finish a task\n4 - delete a  task\n5 - Exit\n")
+		fmt.Printf("1 - Add Task\n2 - List tasks\n3 - Finish a task\n4 - delete a  task\n5 - Exit\n")
 		fmt.Println("What you want to do?")
 		fmt.Scan(&option)
 		switch option {
