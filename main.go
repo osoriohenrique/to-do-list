@@ -21,8 +21,8 @@ func main() {
 func menu() {
 	for {
 		var option int
-		fmt.Printf("1 - Adicionar Tarefa\n2 - Listar tarefa\n3 - Finalizar tarefa\n4 - Excluir tarefa\n5 - Sair\n")
-		fmt.Println("O que vc deseja fazer? ")
+		fmt.Printf("1 - Add Taskn2 - List tasks\n3 - Finish a task\n4 - delete a  task\n5 - Exit\n")
+		fmt.Println("What you want to do?")
 		fmt.Scan(&option)
 		switch option {
 		case 1:
@@ -30,9 +30,13 @@ func menu() {
 		case 2:
 			list()
 		case 3:
-			fmt.Println("Digitou 3")
+			fmt.Println("you typed 3")
+		case 4:
+			fmt.Println("you typed 4")
+		case 5:
+			exit()
 		default:
-			fmt.Println("Digitou errado")
+			fmt.Println("you typed it wrong")
 		}
 	}
 }
@@ -53,4 +57,8 @@ func addTask() task {
 
 func list() {
 	fmt.Println(allTasks)
+}
+
+func exit() {
+	os.Exit(0)
 }
